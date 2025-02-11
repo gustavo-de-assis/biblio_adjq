@@ -3,19 +3,22 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    --font-title: var(--font-pt-serif);
+    --font-custom: var(--font-geist-mono);
+    --font-body: var(--font-geist-sans); /* Add this */
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-body), sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-title), serif;
+}
+
+code,
+pre {
+    font-family: var(--font-custom), monospace;
 }

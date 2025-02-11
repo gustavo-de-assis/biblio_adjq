@@ -9,8 +9,10 @@ export default function Login() {
           style={{ backgroundImage: `url('/assets/images/biblioteca.png')` }}
         ></div>
       </section>
-      <section className="flex flex-col justify-center items-center bg-blue-400 h-screen w-1/3 gap-6">
-        <div className="text-4xl">Bem vindo à biblioteca ADJQ</div>
+      <section className="flex flex-col justify-center items-center bg-cyan-50 h-screen w-1/3 gap-6">
+        <div className="text-6xl font-serif">
+          <h1>Biblioteca ADJQ</h1>
+        </div>
         <LoginForm />
       </section>
     </main>
