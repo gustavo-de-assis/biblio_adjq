@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FaBook } from "react-icons/fa6";
 import { IoAdd, IoPersonAddSharp } from "react-icons/io5";
 
@@ -36,6 +37,19 @@ export default function Home() {
               <IoPersonAddSharp className="text-2xl" />
             </a>
           </div>
+        </div>
+      </section>
+
+      <section className="flex p-3">
+        <div className="flex flex-col items-center w-[300px] border-4 rounded-lg ">
+          <Image
+            src={"/assets/images/books/7af88f4502.jpg"}
+            alt="Café"
+            width={"250"}
+            height={"400"}
+          />
+          <p>Café com Deus Pai</p>
+          <p>Júnior Rostirola</p>
         </div>
       </section>
       <footer></footer>
